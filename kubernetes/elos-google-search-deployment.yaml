@@ -18,7 +18,7 @@ spec:
     spec:
       containers:
       - name: elos-google-search-mcp
-        image: quay.io/elostech/elos-mcp-google-search:latest
+        image: quay.io/elostech/elos-google-search-mcp:latest
         ports:
         - containerPort: 8000
           name: http
