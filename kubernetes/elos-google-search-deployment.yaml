@@ -42,18 +42,7 @@ spec:
           limits:
             memory: "256Mi"
             cpu: "200m"
-        livenessProbe:
-          httpGet:
-            path: /health
-            port: 8000
-          initialDelaySeconds: 30
-          periodSeconds: 10
-        readinessProbe:
-          httpGet:
-            path: /health
-            port: 8000
-          initialDelaySeconds: 5
-          periodSeconds: 5
+        # Health checks removed - FastMCP doesn't have built-in health endpoint
         volumeMounts:
         - name: google-credentials
           mountPath: /app/credentials

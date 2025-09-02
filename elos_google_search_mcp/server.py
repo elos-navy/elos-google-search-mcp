@@ -216,4 +216,4 @@ def get_search_health() -> Dict[str, Any]:
 
 if __name__ == "__main__":
     # Run the MCP server
-    mcp.run(transport='sse')
+    mcp.run(transport='sse', host='0.0.0.0', port=8000)
